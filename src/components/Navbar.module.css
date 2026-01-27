@@ -57,3 +57,29 @@
 .active::after {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        position: relative;
+        /* Or sticky if preferred, but auto height + fixed can be tricky */
+        position: fixed;
+    }
+
+    .inner {
+        flex-direction: column;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .links {
+        width: 100%;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+}

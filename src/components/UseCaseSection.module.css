@@ -100,6 +100,10 @@
 }
 
 @media (max-width: 900px) {
+    .section {
+        padding: 4rem 0;
+    }
+
     .masterGrid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -107,5 +111,10 @@
 
     .detailsGrid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
     }
 }

@@ -1,0 +1,59 @@
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 3rem;
+    /* Fixed padding instead of centered container */
+    max-width: 100%;
+}
+
+/* Remove container constraint if it was strictly centered before */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-height);
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    object-fit: contain;
+    max-width: 200px;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.link {
+    font-family: var(--font-sans-family);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--black);
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--hilton-blue);
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.active::after {
+    width: 100%;
+}

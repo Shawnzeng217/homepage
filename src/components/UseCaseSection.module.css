@@ -1,0 +1,111 @@
+.section {
+    padding: 8rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Master Section: Large Media + Text */
+.masterGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+.masterMediaWrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    background-color: #f0f0f0;
+}
+
+.masterMedia {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.masterMediaWrapper:hover .masterMedia {
+    transform: scale(1.03);
+}
+
+.masterContent {
+    padding-right: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--hilton-blue);
+}
+
+.description {
+    font-family: var(--font-sans-family);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+/* Details Section: Smaller Sub-features */
+/* Details Section: Smaller Sub-features */
+.detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+    padding-top: 0;
+    border-top: none;
+}
+
+.detailItem {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.detailImageWrapper {
+    position: relative;
+    width: 240px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.detailImage {
+    object-fit: cover;
+}
+
+.detailText h4 {
+    font-family: var(--font-sans-family);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--hilton-blue);
+    margin-bottom: 0.5rem;
+}
+
+.detailText p {
+    font-family: var(--font-sans-family);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+@media (max-width: 900px) {
+    .masterGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .detailsGrid {
+        grid-template-columns: 1fr;
+    }
+}

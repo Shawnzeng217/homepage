@@ -1,0 +1,99 @@
+:root {
+  /* Brand Colors */
+  --hilton-blue: #002F61;
+  --hilton-off-white: #F0E9E6;
+  --white: #FFFFFF;
+  --black: #000000;
+  
+  /* Secondary Colors */
+  --hilton-turquoise: #007293;
+  --hilton-teal: #06937E;
+  --hilton-green: #6BB030;
+
+  /* Typography Variables (set by next/font) */
+  --font-sans-family: var(--font-sans), system-ui, sans-serif;
+  --font-serif-family: var(--font-serif), Georgia, serif;
+
+  /* Spacing & Layout */
+  --max-width: 1200px;
+  --nav-height: 80px;
+}
+
+/* Premium Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--hilton-off-white);
+  color: var(--black);
+  font-family: var(--font-sans-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-serif-family);
+  color: var(--black);
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-sans-family);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: var(--hilton-blue);
+  color: var(--white);
+  border: 1px solid var(--hilton-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--hilton-turquoise);
+  border-color: var(--hilton-turquoise);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--hilton-blue);
+  border: 1px solid var(--hilton-blue);
+}
+
+.btn-outline:hover {
+  background-color: var(--hilton-blue);
+  color: var(--white);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(240, 233, 230, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

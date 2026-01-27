@@ -16,19 +16,20 @@ export default function ProductivityPage() {
             </header>
 
             <UseCaseSection
-                title="Auto-Scheduling Assistant"
-                description="Optimizing housekeeping schedules in real-time based on guest check-out and preference data."
-                masterImage=""
+                title="Market Intelligence Feed"
+                description="Monitoring competitor activity across Greater China"
+                masterImage="/productivity/market-intelligence-feed.png"
+                link="https://competitor-tracker-gemini.vercel.app/"
                 details={[
                     {
-                        title: "Live Updates",
-                        description: "Schedules adjust automatically as guests check out.",
-                        image: ""
+                        title: "Strategy AI chatbot",
+                        description: "Real-time AI analysis of market trends and strategies.",
+                        image: "/productivity/strategy-ai.png"
                     },
                     {
-                        title: "Team Dashboard",
-                        description: "Visual overview of floor status for supervisors.",
-                        image: ""
+                        title: "History logs",
+                        description: "Comprehensive activity logs for tracking all competitor moves.",
+                        image: "/productivity/history-logs.png"
                     }
                 ]}
             />

@@ -5,7 +5,8 @@ export default function UseCaseSection({
     title,
     description,
     masterImage,
-    details = []
+    details = [],
+    link
 }) {
     return (
         <section className={styles.section}>
@@ -25,7 +26,11 @@ export default function UseCaseSection({
                     <div className={styles.masterContent}>
                         <h2 className={styles.title}>{title}</h2>
                         <p className={styles.description}>{description}</p>
-                        <button className="btn btn-primary">View Demo</button>
+                        {link && (
+                            <a href={link} target="_blank" rel="noopener noreferrer">
+                                <button className="btn btn-primary">View Demo</button>
+                            </a>
+                        )}
                     </div>
                 </div>
 

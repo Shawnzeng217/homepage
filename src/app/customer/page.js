@@ -8,7 +8,7 @@ export const metadata = {
 export default function CustomerPage() {
     return (
         <main>
-            <header className={styles.sectionHeader} style={{ paddingTop: '8rem' }}>
+            <header className={styles.sectionHeader} style={{ paddingTop: '8rem', marginBottom: 0 }}>
                 <span className={styles.sectionLabel}>Customer Interaction</span>
                 <h1 className={styles.sectionDescription}>
                     Reimagining how we connect with guests.

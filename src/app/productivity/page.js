@@ -8,7 +8,7 @@ export const metadata = {
 export default function ProductivityPage() {
     return (
         <main>
-            <header className={styles.sectionHeader} style={{ paddingTop: '8rem' }}>
+            <header className={styles.sectionHeader} style={{ paddingTop: '8rem', marginBottom: 0 }}>
                 <span className={styles.sectionLabel}>Productivity Boosters</span>
                 <h1 className={styles.sectionDescription}>
                     Empowering our team with intelligent tools.

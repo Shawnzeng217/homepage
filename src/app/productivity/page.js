@@ -16,8 +16,8 @@ export default function ProductivityPage() {
             </header>
 
             <UseCaseSection
-                title="Market Intelligence Feed"
-                description="Monitoring competitor activity across Greater China"
+                title="Campaign Tracker"
+                description="Monitoring competitor activity across Japan"
                 masterImage="/productivity/market-intelligence-feed.png"
                 link="https://competitor-tracker-gemini.vercel.app/"
                 details={[

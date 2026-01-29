@@ -19,7 +19,7 @@ export default function ProductivityPage() {
                 title="Campaign Tracker"
                 description="Monitoring competitor activity across Japan"
                 masterImage="/productivity/market-intelligence-feed.png"
-                link="https://competitor-tracker-gemini.vercel.app/"
+                link="https://competitor-tracker-japan.vercel.app/"
                 details={[
                     {
                         title: "Strategy AI chatbot",
